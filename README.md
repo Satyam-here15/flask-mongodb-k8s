@@ -4,41 +4,24 @@ A Python Flask application connected to MongoDB, fully deployed on a Kubernetes 
 
 ---
 
-## Project Structure
-
 flask-mongodb-k8s/
-
 ├── app/
-
 │   ├── app.py
-
 │   ├── requirements.txt
-
 │   └── Dockerfile
-
 ├── k8s/
-
 │   ├── mongo-secret.yaml
-
 │   ├── mongo-pv.yaml
-
 │   ├── mongo-pvc.yaml
-
 │   ├── mongo-statefulset.yaml
-
 │   ├── mongo-service.yaml
-
 │   ├── flask-deployment.yaml
-
 │   ├── flask-service.yaml
-
 │   └── flask-hpa.yaml
-
 ├── screenshots/
 │   ├── hpa-autoscaling.png
 │   └── pods-scaled.png
 └── README.md
-
 ---
 
 ## Prerequisites
