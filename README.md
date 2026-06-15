@@ -34,6 +34,9 @@ flask-mongodb-k8s/
 
 │   └── flask-hpa.yaml
 
+├── screenshots/
+│   ├── hpa-autoscaling.png
+│   └── pods-scaled.png
 └── README.md
 
 ---
@@ -276,16 +279,18 @@ After deploying all resources, the MongoDB connection and data persistence were 
 Invoke-RestMethod -Uri http://127.0.0.1:50899/data -Method POST -ContentType "application/json" -Body '{"name":"satyam","role":"developer"}'
 ```
 Result:
-status
-Data inserted
+```
+{"status": "Data inserted"}
+```
 
 **GET request — retrieving data:**
 ```bash
 Invoke-RestMethod -Uri http://127.0.0.1:50899/data -Method GET
 ```
 Result:
-name   role
-satyam developer
+```
+[{"name": "satyam", "role": "developer"}]
+```
 
 Data was successfully stored in MongoDB with authentication and retrieved correctly. The Flask app connected to MongoDB using the service DNS name `mongodb` internally.
 
