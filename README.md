@@ -2,8 +2,7 @@
 
 A Python Flask application connected to MongoDB, fully deployed on a Kubernetes cluster using Minikube. This project demonstrates containerization, orchestration, autoscaling, persistent storage, and database authentication.
 
----
-
+```
 flask-mongodb-k8s/
 ├── app/
 │   ├── app.py
@@ -22,7 +21,7 @@ flask-mongodb-k8s/
 │   ├── hpa-autoscaling.png
 │   └── pods-scaled.png
 └── README.md
----
+```
 
 ## Prerequisites
 
